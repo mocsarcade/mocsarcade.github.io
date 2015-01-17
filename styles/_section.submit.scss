@@ -1,0 +1,67 @@
+#submit
+{
+    background-color: $yellow;
+    
+    form
+    {
+        text-align: center;
+        
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        margin: auto;
+        position: absolute;
+        
+        width: 75%;
+        height: 7rem;
+        min-width: 480px;
+        max-width: 720px;
+        padding: 0rem 1rem;
+        box-sizing: border-box;
+
+        @media(max-width: 520px)
+        {
+            width: 100%;
+            min-width: 0px;
+        }
+        
+        h2
+        {
+            margin: 0px;
+            display: block;
+            
+            font-size: 2rem;
+            white-space: nowrap;
+            font-family: chatype, serif;
+        }
+        
+        small
+        {
+            font-size: 1rem;
+        }
+
+        input[type=text]
+        {
+            font: inherit;
+            font-size: 1.5rem;
+            text-align: center;
+            
+            width: 100%;
+            display: block;
+            padding: 0.25rem;
+            margin: 0.5rem 0rem;
+            box-sizing: border-box;
+            
+            border-width: 1px;
+            border-color: #BBB;
+            border-style: solid;
+            border-radius: 0.5rem;
+            
+            &:focus
+            {
+                outline: none;
+            }
+        }
+    }
+}
