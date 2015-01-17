@@ -7,10 +7,13 @@ $(document).ready(function()
         event.preventDefault();
         
         var repo = $(this).find("input").val();
+        repo = repo.replace("github.com", "cdn.rawgit.com") + "/master/package.json"
         
-        firebase.push({
-            repository: repo
-        });
+        console.log(repo);
+        jQuery.get(repo, function(data)
+        {
+            console.log(data);
+        })
     });
     
     $.localScroll();
