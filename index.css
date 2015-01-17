@@ -7,12 +7,38 @@ html, body
 :root
 {
     font-size: 18px;
-    font-family: calibri, sans-serif;
+    font-family: open-sans, sans-serif;
+}
+
+small
+{
+    font-size: 1rem;
 }
 
 span
 {
     white-space: nowrap;
+}
+
+@font-face
+{
+    font-family: chatype;
+    font-style: normal; font-weight: normal;
+	src: url("./fonts/cha-type.ttf") format("truetype");
+}
+
+@font-face
+{
+    font-family: open-sans;
+    font-style: normal; font-weight: normal;
+	src: url("./fonts/open-sans.ttf") format("truetype");
+}
+
+@font-face
+{
+    font-family: goldfish;
+    font-style: normal; font-weight: normal;
+	src: url("./fonts/goldfish.ttf") format("truetype");
 }
 
 section
@@ -22,22 +48,32 @@ section
     position: relative;
 }
 
-section:nth-child(1)
+section#splash
+{
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url("./images/mocsarcade.jpg");
+    background-attachment: fixed;
+    background-color: #FDDB69;
+}
+
+section#submit
 {
     background-color: #FDDB69;
 }
 
-section:nth-child(2)
+section#howto
 {
     background-color: #0DBDA5;
 }
 
-section:nth-child(3)
+section#about
 {
     background-color: #FF43AE;
 }
 
-form
+section#submit > form
 {
     top: 0px;
     left: 0px;
@@ -58,22 +94,29 @@ form
 
 @media(max-width: 520px)
 {
-    form
+    :root
+    {
+        font-size: 16px;
+    }
+    
+    section#submit > form
     {
         width: 100%;
         min-width: 0px;
     }
 }
 
-form > h2
+section#submit > form > h2
 {
     margin: 0px;
     display: block;
     
     font-size: 2rem;
+    white-space: nowrap;
+    font-family: chatype, calibri, sans-serif;
 }
 
-form > input[type=text]
+section#submit > form > input[type=text]
 {
     font: inherit;
     font-size: 1.5rem;
@@ -91,12 +134,17 @@ form > input[type=text]
     border-radius: 0.5rem;
 }
 
-form > input[type=text]:focus
+section#submit > form > input[type=text]:focus
 {
     outline: none;
 }
 
-form > small
+section#splash > h1
 {
-    font-size: 0.9rem;
+    margin: 0px;
+    
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    font-family: goldfish;
 }
