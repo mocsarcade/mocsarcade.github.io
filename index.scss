@@ -12,7 +12,6 @@ html, body
 
 :root
 {
-    font-size: 18px;
     font-family: open-sans, sans-serif;
 }
 
@@ -54,16 +53,14 @@ section#submit
         position: absolute;
         
         width: 75%;
-        height: 7em;
+        height: 7rem;
         min-width: 480px;
         max-width: 720px;
-        padding: 0em 1em;
+        padding: 0rem 1rem;
         box-sizing: border-box;
 
         @media(max-width: 520px)
         {
-            font-size: 16px;
-            
             width: 100%;
             min-width: 0px;
         }
@@ -73,32 +70,32 @@ section#submit
             margin: 0px;
             display: block;
             
-            font-size: 2em;
+            font-size: 2rem;
             white-space: nowrap;
             font-family: chatype, serif;
         }
         
         small
         {
-            font-size: 1em;
+            font-size: 1rem;
         }
 
         input[type=text]
         {
             font: inherit;
-            font-size: 1.5em;
+            font-size: 1.5rem;
             text-align: center;
             
             width: 100%;
             display: block;
-            padding: 0.25em;
-            margin: 0.5em 0em;
+            padding: 0.25rem;
+            margin: 0.5rem 0rem;
             box-sizing: border-box;
             
             border-width: 1px;
             border-color: #BBB;
             border-style: solid;
-            border-radius: 0.5em;
+            border-radius: 0.5rem;
             
             &:focus
             {
