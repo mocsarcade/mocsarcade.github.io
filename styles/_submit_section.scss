@@ -2,31 +2,25 @@
 {
     background-color: $yellow;
     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     form
     {
         text-align: center;
         
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-        margin: auto;
-        position: absolute;
-        
         width: 75%;
-        height: 7.25rem;
-        min-width: 480px;
+        padding: 1rem;
         max-width: 720px;
-        padding: 0rem 1rem;
         box-sizing: border-box;
 
-        @media(max-width: 520px)
+        @media(max-width: 480px)
         {
             width: 100%;
-            min-width: 100%;
         }
         
-        h2
+        b
         {
             margin: 0px;
             display: block;
