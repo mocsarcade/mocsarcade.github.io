@@ -1,6 +1,8 @@
 ---
 ---
 
+@import "./styles/fonts.scss";
+
 html, body
 {
     margin: 0px;
@@ -21,27 +23,6 @@ small
 span
 {
     white-space: nowrap;
-}
-
-@font-face
-{
-    font-family: chatype;
-    font-style: normal; font-weight: normal;
-	src: url("./fonts/cha-type.ttf") format("truetype");
-}
-
-@font-face
-{
-    font-family: open-sans;
-    font-style: normal; font-weight: normal;
-	src: url("./fonts/open-sans.ttf") format("truetype");
-}
-
-@font-face
-{
-    font-family: goldfish;
-    font-style: normal; font-weight: normal;
-	src: url("./fonts/goldfish.ttf") format("truetype");
 }
 
 section
