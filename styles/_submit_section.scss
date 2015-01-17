@@ -1,4 +1,4 @@
-#submit
+#submit-section
 {
     background-color: $yellow;
     
@@ -14,7 +14,7 @@
         position: absolute;
         
         width: 75%;
-        height: 7rem;
+        height: 7.25rem;
         min-width: 480px;
         max-width: 720px;
         padding: 0rem 1rem;
@@ -23,7 +23,7 @@
         @media(max-width: 520px)
         {
             width: 100%;
-            min-width: 0px;
+            min-width: 100%;
         }
         
         h2
@@ -32,7 +32,6 @@
             display: block;
             
             font-size: 2rem;
-            white-space: nowrap;
             font-family: chatype, serif;
         }
         

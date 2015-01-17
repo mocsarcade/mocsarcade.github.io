@@ -3,14 +3,17 @@
 
 html, body
 {
-    margin: 0px;
     height: 100%;
+}
+
+*
+{
+    margin: 0px;
 }
 
 @import "fonts.scss";
 @import "colors.scss";
 @import "mixins.scss";
-
 @import "sections.scss";
 
 :root

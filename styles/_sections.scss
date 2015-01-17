@@ -5,15 +5,10 @@ section
     position: relative;
 }
 
-section#howto
+@import "_splash_section.scss";
+@import "_submit_section.scss";
+
+#learn-section
 {
     background-color: $blue;
 }
-
-section#about
-{
-    background-color: $red;
-}
-
-@import "_section.splash.scss";
-@import "_section.submit.scss";
