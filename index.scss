@@ -8,6 +8,7 @@ html, body
 }
 
 @import "fonts.scss";
+@import "colors.scss";
 
 :root
 {
@@ -32,103 +33,97 @@ section
     position: relative;
 }
 
-section#splash
-{
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-image: url("./images/mocsarcade.jpg");
-    background-attachment: fixed;
-    background-color: #FDDB69;
-}
-
-section#submit
-{
-    background-color: #FDDB69;
-}
-
 section#howto
 {
-    background-color: #0DBDA5;
+    background-color: $blue;
 }
 
 section#about
 {
-    background-color: #FF43AE;
+    background-color: $red;
 }
 
-section#submit > form
+section#submit
 {
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    margin: auto;
-    position: absolute;
+    background-color: $yellow;
     
-    width: 75%;
-    height: 7rem;
-    min-width: 480px;
-    max-width: 720px;
-    padding: 0rem 1rem;
-    box-sizing: border-box;
-    
-    text-align: center;
-}
-
-@media(max-width: 520px)
-{
-    :root
+    form
     {
-        font-size: 16px;
+        text-align: center;
+        
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        margin: auto;
+        position: absolute;
+        
+        width: 75%;
+        height: 7em;
+        min-width: 480px;
+        max-width: 720px;
+        padding: 0em 1em;
+        box-sizing: border-box;
+
+        @media(max-width: 520px)
+        {
+            font-size: 16px;
+            
+            width: 100%;
+            min-width: 0px;
+        }
+        
+        h2
+        {
+            margin: 0px;
+            display: block;
+            
+            font-size: 2em;
+            white-space: nowrap;
+            font-family: chatype, serif;
+        }
+
+        input[type=text]
+        {
+            font: inherit;
+            font-size: 1.5rem;
+            text-align: center;
+            
+            width: 100%;
+            display: block;
+            padding: 0.25rem;
+            margin: 0.5rem 0rem;
+            box-sizing: border-box;
+            
+            border-width: 1px;
+            border-color: #BBB;
+            border-style: solid;
+            border-radius: 0.5rem;
+            
+            &:focus
+            {
+                outline: none;
+            }
+        }
     }
+}
+
+section#splash
+{
+    background-size: cover;
+    background-color: $yellow;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("_images/mocsarcade.jpg");
     
-    section#submit > form
+    h1
     {
-        width: 100%;
-        min-width: 0px;
+        margin: 0px;
+        
+        color: white;
+        font-size: 5rem;
+        text-align: center;
+        font-family: goldfish;
     }
-}
-
-section#submit > form > h2
-{
-    margin: 0px;
-    display: block;
-    
-    font-size: 2rem;
-    white-space: nowrap;
-    font-family: chatype, calibri, sans-serif;
-}
-
-section#submit > form > input[type=text]
-{
-    font: inherit;
-    font-size: 1.5rem;
-    text-align: center;
-    
-    width: 100%;
-    display: block;
-    padding: 0.25rem;
-    margin: 0.5rem 0rem;
-    box-sizing: border-box;
-    
-    border-width: 1px;
-    border-color: #BBB;
-    border-style: solid;
-    border-radius: 0.5rem;
-}
-
-section#submit > form > input[type=text]:focus
-{
-    outline: none;
-}
-
-section#splash > h1
-{
-    margin: 0px;
-    
-    color: white;
-    font-size: 5rem;
-    text-align: center;
-    font-family: goldfish;
 }
