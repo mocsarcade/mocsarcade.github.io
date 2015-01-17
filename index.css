@@ -1,4 +1,52 @@
-*
+html, body
 {
     margin: 0px;
+    height: 100%;
+}
+
+html
+{
+    font-size: 18px;
+    height: 100%;
+    font-family: calibri, sans-serif;
+}
+
+section
+{
+    width: 100%;
+    height: 100%;
+}
+
+section:nth-child(1)
+{
+    background-color: #FDDB69;
+}
+
+section:nth-child(2)
+{
+    background-color: #0DBDA5;
+}
+
+section:nth-child(3)
+{
+    background-color: #FF43AE;
+}
+
+form
+{
+    padding: 1rem;
+}
+
+input[type=text]
+{
+    font: inherit;
+    
+    width: 100%;
+    padding: 0.25rem;
+    box-sizing: border-box;
+    
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.25rem;
+    border-color: lightgray;
 }
