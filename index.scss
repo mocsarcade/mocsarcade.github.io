@@ -16,11 +16,6 @@ html, body
     font-family: open-sans, sans-serif;
 }
 
-small
-{
-    font-size: 1rem;
-}
-
 span
 {
     white-space: nowrap;
@@ -82,23 +77,28 @@ section#submit
             white-space: nowrap;
             font-family: chatype, serif;
         }
+        
+        small
+        {
+            font-size: 1em;
+        }
 
         input[type=text]
         {
             font: inherit;
-            font-size: 1.5rem;
+            font-size: 1.5em;
             text-align: center;
             
             width: 100%;
             display: block;
-            padding: 0.25rem;
-            margin: 0.5rem 0rem;
+            padding: 0.25em;
+            margin: 0.5em 0em;
             box-sizing: border-box;
             
             border-width: 1px;
             border-color: #BBB;
             border-style: solid;
-            border-radius: 0.5rem;
+            border-radius: 0.5em;
             
             &:focus
             {
