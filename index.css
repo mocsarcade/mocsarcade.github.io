@@ -4,11 +4,15 @@ html, body
     height: 100%;
 }
 
-html
+:root
 {
     font-size: 18px;
-    height: 100%;
     font-family: calibri, sans-serif;
+}
+
+span
+{
+    white-space: nowrap;
 }
 
 section
@@ -40,13 +44,16 @@ form
     right: 0px;
     bottom: 0px;
     margin: auto;
+    position: absolute;
+    
     width: 75%;
+    height: 7rem;
     min-width: 480px;
     max-width: 720px;
-    height: 7rem;
-    padding: 0px 1rem;
-    position: absolute;
+    padding: 0rem 1rem;
     box-sizing: border-box;
+    
+    text-align: center;
 }
 
 @media(max-width: 520px)
@@ -60,28 +67,28 @@ form
 
 form > h2
 {
-    font-size: 2rem;
-    text-align: center;
-    white-space: nowrap;
-    
     margin: 0px;
     display: block;
+    
+    font-size: 2rem;
 }
 
 form > input[type=text]
 {
     font: inherit;
     font-size: 1.5rem;
+    text-align: center;
     
     width: 100%;
+    display: block;
     padding: 0.25rem;
     margin: 0.5rem 0rem;
     box-sizing: border-box;
     
     border-width: 1px;
+    border-color: #BBB;
     border-style: solid;
     border-radius: 0.5rem;
-    border-color: #BBB;
 }
 
 form > input[type=text]:focus
@@ -92,11 +99,4 @@ form > input[type=text]:focus
 form > small
 {
     font-size: 0.9rem;
-    text-align: center;
-    display: block;
-}
-
-form > small > span
-{
-    white-space: nowrap;
 }
