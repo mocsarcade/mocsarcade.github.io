@@ -12,4 +12,6 @@ $(document).ready(function()
             repository: repo
         });
     });
+    
+    $.localScroll();
 });
