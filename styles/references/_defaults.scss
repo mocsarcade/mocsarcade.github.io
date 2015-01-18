@@ -24,6 +24,11 @@ ul
 {
     padding: 0rem;
     list-style-type: none;
+    
+    li
+    {
+        display: inline-block;
+    }
 }
 
 .error
