@@ -1,0 +1,31 @@
+{
+    name: "Bananabomber",
+    description: "A clone of melonbomber from gmod.",
+    developers: [
+        {
+            name: "Andrew McPherson",
+            email: "andrewmcp333@gmail.com",
+            utcid: "psn719"
+        }
+    ],
+    thumbnail: "./thumbnail.png",
+    screenshots: [
+        "./screenshot1.png",
+        "./screenshot2.png",
+        "./screenshot3.png"
+    ],
+    social: {
+        "twitter",
+        "tumblr"
+    },
+    tools: {
+    },
+    repository: "https://github.com/arcym/bananabomber",
+    website: "https://mocsarcade.github.io/bananabomber",
+    executables: {
+        "windows": "./downloads/windows.zip",
+        "macintosh": "./downloads/macintosh.zip",
+        "linux": "./downloads/linux.zip"
+    },
+    
+}

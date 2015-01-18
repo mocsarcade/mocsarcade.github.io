@@ -1,0 +1,10 @@
+section
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+@import "./splash.section.scss";
+@import "./blurb.section.scss";
+@import "./submit.section.scss";

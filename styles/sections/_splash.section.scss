@@ -1,4 +1,4 @@
-#splash-section
+#splash
 {
     background-size: cover;
     background-color: $yellow;
@@ -11,24 +11,23 @@
     align-items: center;
     justify-content: center;
     
-    div
+    header
     {
         padding: 1rem;
         
         color: $white;
         text-align: center;
+        font-family: goldfish;
         
         h1
         {
             font-size: 72px;
-            font-family: goldfish;
             @include text-outline(4px, $black)
         }
         
         h2
         {
             font-size: 16px;
-            font-family: goldfish;
             @include text-outline(3px, $black)
         }
     }

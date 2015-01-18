@@ -1,6 +1,11 @@
 ---
 ---
 
+@import "./references/fonts.scss";
+@import "./references/colors.scss";
+@import "./references/mixins.scss";
+@import "./sections/sections.scss";
+
 html, body
 {
     height: 100%;
@@ -11,13 +16,9 @@ html, body
     margin: 0px;
 }
 
-@import "fonts.scss";
-@import "colors.scss";
-@import "mixins.scss";
-@import "sections.scss";
-
 :root
 {
+    font-size: 16px;
     font-family: open-sans, sans-serif;
 }
 
