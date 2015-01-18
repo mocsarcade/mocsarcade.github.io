@@ -25,3 +25,8 @@
 
     text-shadow: $shadow;
 }
+
+@mixin font-family($fonts)
+{
+    font-family: $fonts;
+}

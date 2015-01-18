@@ -3,26 +3,7 @@
 
 @import "./references/fonts.scss";
 @import "./references/colors.scss";
+@import "./references/images.scss";
 @import "./references/mixins.scss";
+@import "./references/defaults.scss";
 @import "./sections/sections.scss";
-
-html, body
-{
-    height: 100%;
-}
-
-*
-{
-    margin: 0px;
-}
-
-:root
-{
-    font-size: 16px;
-    font-family: open-sans, sans-serif;
-}
-
-span
-{
-    white-space: nowrap;
-}

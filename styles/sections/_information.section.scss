@@ -1,36 +1,30 @@
 #information
 {
-    padding: 2rem;
-    box-sizing: border-box;
-    
     background-color: $yellow;
     
     b
     {
         font-size: 1.5rem;
         white-space: nowrap;
+        font-family: chatype;
+        
+        display: block;
+        margin-bottom: 0.5rem;
     }
     
-    ul
+    li
     {
-        padding: 0rem;
-        list-style-type: none;
-        
-        li
-        {
-            display: inline-block;
-        }
+        display: inline-block;
     }
     
     .content
     {
         margin: auto;
+        padding: 2rem;
         max-width: 640px;
         
         #blurb
         {
-            margin-bottom: 1.5rem;
-            
             p
             {
                 text-indent: 3rem;

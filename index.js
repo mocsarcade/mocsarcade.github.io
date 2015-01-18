@@ -29,4 +29,11 @@ $(document).ready(function()
             $("#information").find("#members").find("ul").append($member);
         }
     })
+    .fail(function()
+    {
+        var $error = $("<li>");
+            $error.attr("class", "error");
+            $error.html("Whoops! We can't reach GitHub.</li>");
+        $("#information").find("#members").find("ul").append($error);
+    })
 });
