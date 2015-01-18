@@ -13,18 +13,20 @@ $(document).ready(function()
         })
     });*/
     
-    jQuery.get("https://api.github.com/orgs/bellhops/members", function(members)
+    jQuery.get("https://api.github.com/orgs/mocsarcade/members", function(members)
     {
         for(var index in members)
         {
-            var $member = $("<a>");
-                $member.attr("target", "_blank");
-                $member.attr("href", members[index].html_url);
+            var $member = $("<li>");
+            var $member_link = $("<a>");
+                $member_link.attr("class", "member");
+                $member_link.attr("target", "_blank");
+                $member_link.attr("href", members[index].html_url);
             var $member_image = $("<img>");
                 $member_image.attr("src", members[index].avatar_url);
-                $member.append($member_image)
-                $member.attr("class", "member");
-            $("#members").append($member);
+                $member_link.append($member_image);
+                $member.append($member_link);
+            $("#members").find("ul").append($member);
         }
     })
 });

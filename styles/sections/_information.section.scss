@@ -1,0 +1,69 @@
+#information
+{
+    padding: 2rem;
+    box-sizing: border-box;
+    
+    background-color: $yellow;
+    
+    b
+    {
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+    
+    ul
+    {
+        padding: 0rem;
+        list-style-type: none;
+        
+        li
+        {
+            display: inline-block;
+        }
+    }
+            
+    
+    #blurb
+    {
+        p
+        {
+            text-indent: 4rem;
+            text-align: justify;
+        }
+    }
+    
+    #members
+    {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        
+        a.member
+        {
+            width: 5rem;
+            height: 5rem;
+            display: block;
+            
+            background-color: $black;
+    
+            img
+            {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    
+    #links
+    {
+        a
+        {
+            white-space: nowrap;
+            text-decoration: none;
+            
+            span
+            {
+                text-decoration: underline;
+            }
+        }
+    }
+}
