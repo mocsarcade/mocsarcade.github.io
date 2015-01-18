@@ -1,17 +1,17 @@
 $(document).ready(function()
 {
-    /*$("form").on("submit", function(event)
+    $("#submission").find("form").on("submit", function(event)
     {
         event.preventDefault();
         
-        var repo = $(this).find("input").val();
-        repo = repo.replace("github.com", "cdn.rawgit.com") + "/master/package.json"
+        /*var repo = $(this).find("input").val();
+        repo = repo.replace("github.com", "cdn.rawgit.com") + "/master/package.json";
         
         jQuery.get(repo, function(data)
         {
             console.log(repo, data);
-        })
-    });*/
+        });*/
+    });
     
     jQuery.get("https://api.github.com/orgs/mocsarcade/members", function(members)
     {
@@ -26,7 +26,7 @@ $(document).ready(function()
                 $member_image.attr("src", members[index].avatar_url);
                 $member_link.append($member_image);
                 $member.append($member_link);
-            $("#members").find("ul").append($member);
+            $("#information").find("#members").find("ul").append($member);
         }
     })
 });
