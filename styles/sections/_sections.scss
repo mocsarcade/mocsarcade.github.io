@@ -1,5 +1,8 @@
 .section
 {
+    min-height: 100%;
+    position: relative;
+    
     .content
     {
         margin: auto;
@@ -9,5 +12,5 @@
 }
 
 @import "./splash.section.scss";
-@import "./read.section.scss";
+@import "./about.section.scss";
 @import "./browse.section.scss";

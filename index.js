@@ -13,7 +13,7 @@ $(document).ready(function()
                 $member_image.attr("src", response[index].avatar_url);
                 $member_link.append($member_image);
                 $member.append($member_link);
-            $("#read").find("#members").find("ul").append($member);
+            $("#about.section").find("#members").find("ul").append($member);
         }
     })
     .fail(function(response)
@@ -21,7 +21,7 @@ $(document).ready(function()
         var $error = $("<li>");
             $error.attr("class", "error");
             $error.html("Whoops! We can't reach GitHub.</li>");
-        $("#read").find("#members").find("ul").append($error);
+        $("#about.section").find("#members").find("ul").append($error);
     });
     
     //jQuery.get("https://api.github.com/orgs/mocsarcade/repos", function(response)
