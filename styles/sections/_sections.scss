@@ -1,11 +1,16 @@
-section
+.section
 {
-    width: 100%;
     min-height: 100%;
     position: relative;
+    
+    .content
+    {
+        margin: auto;
+        padding: 2rem;
+        max-width: 640px;
+    }
 }
 
 @import "./splash.section.scss";
-@import "./information.section.scss";
+@import "./read.section.scss";
 @import "./browse.section.scss";
-@import "./submission.section.scss";
