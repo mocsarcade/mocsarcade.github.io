@@ -1,5 +1,8 @@
 #splash.section
 {
+    min-height: 100%;
+    vertical-align: bottom;
+    
     background-size: cover;
     background-color: $yellow;
     background-position: right;
@@ -7,9 +10,15 @@
     background-attachment: fixed;
     background-image: $makerfaire;
     
-    header
+    .content
     {
-        padding: 1rem;
+        left: 0rem;
+        right: 0rem;
+        bottom: 0rem;
+        overflow: hidden;
+        position: absolute;
+        
+        text-align: center;
         
         h1
         {
